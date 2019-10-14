@@ -62,7 +62,7 @@ trainset = np.concatenate((X,Y),axis=1)
 #testing
 while True:	
 	ret,frame=cap.read()
-	gray_frame=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+	gray_frame=cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
 	if ret==False:
 		continue
 
